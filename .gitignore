@@ -1,0 +1,19 @@
+# Julia artifacts and caches
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+.CondaPkg/
+.venv/
+
+# Local databases and runtime state
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.cache/
+projects/
+workspace/
+sample_project/
+
+# OS files
+.DS_Store
+Thumbs.db

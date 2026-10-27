@@ -1,0 +1,33 @@
+name = "MolecuLab"
+uuid = "b1f8b354-25d9-454b-8d91-9f4a1b91cef0"
+version = "0.1.0"
+authors = ["MolecuLab Developers"]
+
+[deps]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+AtomsBase = "a963bdd2-2df7-4f54-a1ee-49d51e6be12a"
+Cairo = "159f3aea-2a34-519c-b102-8c37f9878175"
+DBInterface = "a10d1c49-ce27-4219-8d33-6db1a4562965"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Gtk4 = "9db2cae5-386f-4011-9d63-a5602296539b"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MolecularGraph = "6c89ec66-9cd8-5372-9f91-fabc50dd27fd"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+SQLite = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+[compat]
+DBInterface = "2.7.0"
+Dates = "1.11.0"
+LinearAlgebra = "1.13.0"
+Printf = "1.11.0"
+Random = "1.11.0"
+SHA = "1.0.0"
+TOML = "1.0.3"
+UUIDs = "1.11.0"

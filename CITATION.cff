@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use MolecuLab in scientific research, please cite it as below."
+authors:
+  - family-names: "MolecuLab"
+    given-names: "Developers"
+title: "MolecuLab: Computational Chemistry Workbench (Julia-first, Local-first)"
+version: 1.0.0
+date-released: 2026-10-27
+url: "https://github.com/moleculab/MolecuLab.jl"
