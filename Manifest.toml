@@ -2,7 +2,7 @@
 
 julia_version = "1.13.3"
 manifest_format = "2.1"
-project_hash = "b89aac41c4f6f3ffacb8a10c19b969efba1a71d9"
+project_hash = "d21d34e88d0d40ef408ea41119b05e1e5ca4eee2"
 
 [[deps.ADTypes]]
 deps = ["PrecompileTools"]
@@ -694,7 +694,7 @@ uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 version = "1.11.0"
 
 [[deps.MolecuLab]]
-deps = ["Aqua", "AtomsBase", "Cairo", "DBInterface", "Dates", "Gtk4", "JSON3", "LinearAlgebra", "MolecularGraph", "Optim", "Printf", "Random", "SHA", "SQLite", "TOML", "UUIDs", "Unitful"]
+deps = ["Aqua", "AtomsBase", "Cairo", "DBInterface", "Dates", "Gtk4", "JSON3", "LinearAlgebra", "MolecularGraph", "Optim", "Printf", "Random", "SHA", "SQLite", "TOML", "Test", "UUIDs", "Unitful"]
 path = "."
 uuid = "b1f8b354-25d9-454b-8d91-9f4a1b91cef0"
 version = "0.1.0"
