@@ -39,6 +39,7 @@ jobs:
 
       - name: Resolve and Instantiate Environment
         run: |
+          Remove-Item -Path Manifest.toml -Force -ErrorAction SilentlyContinue
           julia --project=. -e "using Pkg; Pkg.resolve(); Pkg.instantiate()"
 
       - name: Run Test Suite
