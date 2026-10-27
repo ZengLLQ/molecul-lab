@@ -37,11 +37,13 @@ jobs:
       - name: Cache Julia Artifacts
         uses: julia-actions/cache@v2
 
-      - name: Build Package
-        uses: julia-actions/julia-buildpkg@v1
+      - name: Resolve and Instantiate Environment
+        run: |
+          julia --project=. -e "using Pkg; Pkg.resolve(); Pkg.instantiate()"
 
       - name: Run Test Suite
-        uses: julia-actions/julia-runtest@v1
+        run: |
+          julia --project=. test/runtests.jl
 
       - name: Run Environment Validation
         run: |
