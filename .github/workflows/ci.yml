@@ -37,10 +37,11 @@ jobs:
       - name: Cache Julia Artifacts
         uses: julia-actions/cache@v2
 
-      - name: Resolve and Instantiate Environment
+      - name: Setup Julia Environment
         run: |
+          julia -e 'using Pkg; isempty(Pkg.Registry.reachable_registries()) && Pkg.Registry.add("General")'
           Remove-Item -Path Manifest.toml -Force -ErrorAction SilentlyContinue
-          julia --project=. -e "using Pkg; Pkg.resolve(); Pkg.instantiate()"
+          julia --project=. -e 'using Pkg; Pkg.resolve(); Pkg.instantiate(); Pkg.precompile()'
 
       - name: Run Test Suite
         run: |
